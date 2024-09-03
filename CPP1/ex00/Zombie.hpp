@@ -6,7 +6,7 @@
 /*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 18:01:40 by vpolojie          #+#    #+#             */
-/*   Updated: 2023/11/03 08:17:24 by vpolojie         ###   ########.fr       */
+/*   Updated: 2024/09/03 13:24:29 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ private:
 public:
     Zombie();
     ~Zombie();
-    std::string get_name();
+    std::string get_name() const;
     void    set_name(std::string name);
     void    announce(void);
 };

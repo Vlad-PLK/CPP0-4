@@ -6,7 +6,7 @@
 /*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 18:11:38 by vpolojie          #+#    #+#             */
-/*   Updated: 2023/10/09 15:03:34 by vpolojie         ###   ########.fr       */
+/*   Updated: 2024/09/03 13:26:07 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ Zombie::~Zombie()
     std::cout << "Zombie : " << get_name() << " n°" << get_index() << " destroyed" << std::endl;
 }
 
-std::string Zombie::get_name(void)
+std::string Zombie::get_name(void) const
 {
     return (_name);
 }
 
-int Zombie::get_index(void)
+int Zombie::get_index(void) const
 {
     return (_index);
 }
