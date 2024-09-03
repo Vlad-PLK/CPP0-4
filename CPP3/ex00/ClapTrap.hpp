@@ -6,7 +6,7 @@
 /*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 09:04:18 by vpolojie          #+#    #+#             */
-/*   Updated: 2023/11/13 15:51:57 by vpolojie         ###   ########.fr       */
+/*   Updated: 2024/09/03 13:29:30 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ class ClapTrap
     ClapTrap &operator=(ClapTrap const &_OpCopy);
     ~ClapTrap();
     
-    unsigned int getHP(void);
-    unsigned int getEP(void);
-    unsigned int getAD(void);
+    unsigned int getHP(void) const;
+    unsigned int getEP(void) const;
+    unsigned int getAD(void) const;
     void    setHP(unsigned int HP);
     void    setEP(unsigned int EP);
     void    setAD(unsigned int AD);

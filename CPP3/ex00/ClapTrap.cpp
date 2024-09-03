@@ -6,7 +6,7 @@
 /*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 09:06:18 by vpolojie          #+#    #+#             */
-/*   Updated: 2023/11/13 15:51:46 by vpolojie         ###   ########.fr       */
+/*   Updated: 2024/09/03 13:30:30 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,9 @@
 #include <string>
 #include <iostream>
 
-ClapTrap::ClapTrap(std::string nm)
+ClapTrap::ClapTrap(std::string nm) : _Name(nm), Hit_point(10), Energy_points(10), Attack_damage(0)
 {
     std::cout << "Default Constructor called" << std::endl;
-    _Name.assign(nm);
-    Hit_point = 10;
-    Energy_points = 10;
-    Attack_damage = 0;
 }
 
 ClapTrap::ClapTrap(ClapTrap const &_copy)
@@ -44,17 +40,17 @@ ClapTrap::~ClapTrap()
     std::cout << "Default Destructor called" << std::endl;
 }
 
-unsigned    int ClapTrap::getHP(void)
+unsigned    int ClapTrap::getHP(void) const
 {
     return (Hit_point);
 }
 
-unsigned    int ClapTrap::getEP(void)
+unsigned    int ClapTrap::getEP(void) const
 {
     return (Energy_points);
 }
 
-unsigned    int ClapTrap::getAD(void)
+unsigned    int ClapTrap::getAD(void) const
 {
     return (Attack_damage);
 }
